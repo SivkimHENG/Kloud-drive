@@ -58,7 +58,7 @@ function Login() {
               <div className=" px-10 ">
                 <div>
                   <Text className="text-2xl text-white text-center font-bold mb-2">
-                    Focus<span className="text-tertiary">App</span>
+                    <span className="text-tertiary">Kloudz</span>
                   </Text>
 
                   <h2 className=" text-center md:text-sm text-xs tracking-tight text-gray-900">
@@ -73,7 +73,7 @@ function Login() {
                 <div>
                   <Formik
                     initialValues={initialValues}
-                    validate={validateForm}
+                    validate={valiadateForms}
                     onSubmit={(values) => onLogin(values)}
                   >
                     {({
@@ -146,7 +146,7 @@ function Login() {
 
               <p className="text-sm mt-10 text-white text-center">
                 No account yet?{" "}
-                <NavLink to="/signup" className="underline text-tertiary">
+                <NavLink to="/" className="underline text-tertiary">
                   Sign up
                 </NavLink>
               </p>

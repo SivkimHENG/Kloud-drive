@@ -1,13 +1,14 @@
 import SignUp from "./page/SignUp.jsx";
 import Login from "./page/Login.jsx";
 import DashBoard from "./page/DashBoard.jsx";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { ErrorBoundary } from "react-error-boundary";
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
+import { Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <>
-      <SignUp />
-    </>
+    <Routes>
+      <Route path="/" element={<SignUp />} />;
+      <Route path="/login" element={<Login />} />;
+    </Routes>
   );
 }
 

@@ -1,4 +1,5 @@
+import Navbar from "../components/Navbar";
 function DashBoard() {
-  return <div>Page</div>;
+  return <Navbar />;
 }
 export default DashBoard;

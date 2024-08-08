@@ -38,7 +38,7 @@ function Login() {
       .then((userCredential) => {
         setLoading(false);
         const user = userCredential.user;
-        navigate("/home");
+        navigate("/dashboard");
         console.log(user);
       })
       .catch((error) => {

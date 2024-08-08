@@ -61,7 +61,7 @@ const Signup = () => {
         setLoading(false);
         const user = userCredential.user;
         console.log(user);
-        navigate("/home");
+        navigate("/dashboard");
         // ...
       })
       .catch((error) => {

@@ -1,5 +1,12 @@
-import Navbar from "../components/Navbar";
+import { useState } from "react";
+import Imageupload from "../components/Imageupload";
 function DashBoard() {
-  return <Navbar />;
+
+
+
+	return <Imageupload />
+
+
+
 }
 export default DashBoard;
